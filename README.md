@@ -22,14 +22,21 @@ source .bashrc
 ## Installation Of the ROS-python dependencies  
 ```
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essentialsudo apt install python-rosdep
-   21  sudo rosdep init
-   22  rosdep update
-   23  roscore
-   24  wget https://packages.clearpathrobotics.com/public.key -O - | sudo apt-key add -
-   25  sudo sh -c 'echo "deb https://packages.clearpathrobotics.com/stable/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/clearpath-latest.list'
-   26  sudo apt-get update 
-   27  sudo apt-get install ros-melodic-husky-robot 
-   28  cd /etc/ros/
+sudo rosdep init
+rosdep update
+```
+open seperate Terminal and Type:
+```
+roscore
+```
+# Installation of Clearpath packages for Husky Robot
+````
+wget https://packages.clearpathrobotics.com/public.key -O - | sudo apt-key add -
+sudo sh -c 'echo "deb https://packages.clearpathrobotics.com/stable/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/clearpath-latest.list'
+sudo apt-get update 
+sudo apt-get install ros-melodic-husky-robot 
+```
+ cd /etc/ros/
    29  ls
 
    30  sudo nano setup.bash
