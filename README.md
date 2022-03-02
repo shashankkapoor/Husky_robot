@@ -1,6 +1,6 @@
 # Husky_robot
 
-Hi All,  
+Hi All, 
 ## Prequisite
 1. ubuntu 18.04 Installed
 
@@ -17,9 +17,11 @@ sudo apt update
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt install ros-melodic-desktop-full
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source .bashrc 
-   19  sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-   20  sudo apt install python-rosdep
+source .bashrc
+```
+## Installation Of the ROS-python dependencies  
+```
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essentialsudo apt install python-rosdep
    21  sudo rosdep init
    22  rosdep update
    23  roscore
